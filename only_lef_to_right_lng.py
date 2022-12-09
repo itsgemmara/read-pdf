@@ -6,7 +6,7 @@ with pdfplumber.open(r'Daddy-Long-Legs.pdf') as pdf:
         text = page.extract_text()
         sentence = ''
         for i in text:
-            if i != '.' and i != '؛' and i != ';':
+            if i != '.' and i != ';':
                 sentence += i
             else:
                 sentences.append(sentence)
